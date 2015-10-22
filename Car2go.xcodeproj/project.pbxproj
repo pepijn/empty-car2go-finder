@@ -14,6 +14,8 @@
 		3D0C53B61BD97A0300471D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0C53B41BD97A0300471D2A /* LaunchScreen.storyboard */; };
 		3D0C53C11BD97A0300471D2A /* Car2goTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C53C01BD97A0300471D2A /* Car2goTests.swift */; };
 		3D0C53CC1BD97A0300471D2A /* Car2goUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C53CB1BD97A0300471D2A /* Car2goUITests.swift */; };
+		3D0C53DA1BD97E7700471D2A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C53D91BD97E7700471D2A /* README.md */; };
+		3D0C53DC1BD9807800471D2A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0C53DB1BD9807800471D2A /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3D0C53C71BD97A0300471D2A /* Car2goUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Car2goUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0C53CB1BD97A0300471D2A /* Car2goUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car2goUITests.swift; sourceTree = "<group>"; };
 		3D0C53CD1BD97A0300471D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D0C53D91BD97E7700471D2A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3D0C53DB1BD9807800471D2A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0C53DC1BD9807800471D2A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,8 @@
 		3D0C539F1BD97A0300471D2A = {
 			isa = PBXGroup;
 			children = (
+				3D0C53DB1BD9807800471D2A /* MapKit.framework */,
+				3D0C53D91BD97E7700471D2A /* README.md */,
 				3D0C53AA1BD97A0300471D2A /* Car2go */,
 				3D0C53BF1BD97A0300471D2A /* Car2goTests */,
 				3D0C53CA1BD97A0300471D2A /* Car2goUITests */,
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0C53DA1BD97E7700471D2A /* README.md in Sources */,
 				3D0C53AE1BD97A0300471D2A /* ViewController.swift in Sources */,
 				3D0C53AC1BD97A0300471D2A /* AppDelegate.swift in Sources */,
 			);
