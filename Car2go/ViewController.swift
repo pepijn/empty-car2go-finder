@@ -90,9 +90,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
         view.layer.zPosition = 1
+        view.alpha = 1
     }
 
     func mapView(mapView: MKMapView, didDeselectAnnotationView view: MKAnnotationView) {
-        view.layer.zPosition = (view.annotation as! CarAnnotation).zPosition
+        let annotation = view.annotation as! CarAnnotation
+        view.layer.zPosition = annotation.zPosition
+        view.alpha = annotation.alpha
     }
 }
