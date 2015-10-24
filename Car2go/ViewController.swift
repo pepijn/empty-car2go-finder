@@ -80,7 +80,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
                 view.alpha = annotation.alpha
                 view.layer.zPosition = annotation.zPosition
                 view.canShowCallout = true
-                view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
+                // view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
             }
             return view
         }
