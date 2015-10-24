@@ -75,8 +75,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         if let annotation = annotation as? CarAnnotation {
             let identifier = String(annotation.car.freeMinutesRewardLevel)
             var view: MKPinAnnotationView
-            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
-                as? MKPinAnnotationView {
+            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView {
                     dequeuedView.annotation = annotation
                     view = dequeuedView
             } else {
