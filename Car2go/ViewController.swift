@@ -66,11 +66,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
         task.resume()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         if let annotation = annotation as? CarAnnotation {
             let identifier = String(annotation.car.freeMinutesRewardLevel)
@@ -91,5 +86,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
             return view
         }
         return nil
+    }
+
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        view.layer.zPosition = 1
+    }
+
+    func mapView(mapView: MKMapView, didDeselectAnnotationView view: MKAnnotationView) {
+        view.layer.zPosition = (view.annotation as! CarAnnotation).zPosition
     }
 }
