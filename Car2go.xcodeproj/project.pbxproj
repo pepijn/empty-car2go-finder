@@ -16,6 +16,8 @@
 		3D0C53CC1BD97A0300471D2A /* Car2goUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C53CB1BD97A0300471D2A /* Car2goUITests.swift */; };
 		3D0C53DA1BD97E7700471D2A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C53D91BD97E7700471D2A /* README.md */; };
 		3D0C53DC1BD9807800471D2A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0C53DB1BD9807800471D2A /* MapKit.framework */; };
+		3D2675C11BDBA8880014117F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2675C01BDBA8880014117F /* Car.swift */; };
+		3DA041BB1BDB763600B7E70E /* CarAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA041BA1BDB763600B7E70E /* CarAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3D0C53CD1BD97A0300471D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D0C53D91BD97E7700471D2A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3D0C53DB1BD9807800471D2A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3D2675C01BDBA8880014117F /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		3DA041BA1BDB763600B7E70E /* CarAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +110,12 @@
 			children = (
 				3D0C53AB1BD97A0300471D2A /* AppDelegate.swift */,
 				3D0C53AD1BD97A0300471D2A /* ViewController.swift */,
+				3DA041BA1BDB763600B7E70E /* CarAnnotation.swift */,
 				3D0C53AF1BD97A0300471D2A /* Main.storyboard */,
 				3D0C53B21BD97A0300471D2A /* Assets.xcassets */,
 				3D0C53B41BD97A0300471D2A /* LaunchScreen.storyboard */,
 				3D0C53B71BD97A0300471D2A /* Info.plist */,
+				3D2675C01BDBA8880014117F /* Car.swift */,
 			);
 			path = Car2go;
 			sourceTree = "<group>";
@@ -265,7 +271,9 @@
 			files = (
 				3D0C53DA1BD97E7700471D2A /* README.md in Sources */,
 				3D0C53AE1BD97A0300471D2A /* ViewController.swift in Sources */,
+				3D2675C11BDBA8880014117F /* Car.swift in Sources */,
 				3D0C53AC1BD97A0300471D2A /* AppDelegate.swift in Sources */,
+				3DA041BB1BDB763600B7E70E /* CarAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +500,7 @@
 				3D0C53D21BD97A0300471D2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D0C53D31BD97A0300471D2A /* Build configuration list for PBXNativeTarget "Car2goTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +509,7 @@
 				3D0C53D51BD97A0300471D2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D0C53D61BD97A0300471D2A /* Build configuration list for PBXNativeTarget "Car2goUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +518,7 @@
 				3D0C53D81BD97A0300471D2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
