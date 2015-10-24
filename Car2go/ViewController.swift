@@ -87,7 +87,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y: 5)
                 view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
-                view.rightCalloutAccessoryView?.layer.zPosition = 1.0 // Max charge is 100
             }
             return view
         }
