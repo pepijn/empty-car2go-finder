@@ -6,7 +6,7 @@
 //  Copyright © 2015 Pepijn Looije. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 enum FreeMinutesRewardLevel {
     case Reward
